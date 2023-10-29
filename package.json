@@ -7,7 +7,7 @@
     "build": "export NODE_OPTIONS=--openssl-legacy-provider; ng build",
     "test": "ng test",
     "e2e": "ng e2e",
-    "postbuild": "echo '[[redirects]]\n  from = \"/*\"\n  to = \"/index.html\"\n  status = 200' > netlify.toml && mv netlify.toml dist/"
+    "postbuild": "echo '[[redirects]]\n  from = \"/*\"\n  to = \"/index.html\"\n  status = 200' > netlify.toml && mv netlify.toml dist/lnn-portfolio"
   },
   "private": true,
   "dependencies": {
