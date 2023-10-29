@@ -47,5 +47,9 @@
     "assert": false,
     "child_process": false,
     "os": false
+  },
+  "engines": {
+    "node": "^14",
+    "npm": "^6"
   }
 }
