@@ -6,8 +6,7 @@
     "start": "node server",
     "build": "ng build",
     "test": "ng test",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
