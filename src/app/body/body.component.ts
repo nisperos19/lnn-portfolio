@@ -219,7 +219,7 @@ export class BodyComponent implements OnInit {
       distance: '60px',
       duration: 2500,
       delay: 400,
-      // reset: true // Animation reset
+      reset: true, // Animation reset
     });
     sr.reveal(`.home__perfil, .about__image, .contact__mail`, {
       origin: 'right',
