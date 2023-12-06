@@ -7,15 +7,19 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(14, 98%, 50%);
-  --black-color: hsl(0, 0%, 0%);
+  --first-color: hsl(14, 98%, 50%); /*highlight accents*/
+  --black-color: hsl(0, 0%, 0%); /* white mode black default*/
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
-  --title-color: hsl(0, 0%, 0%);
+  --title-color: hsl(0, 0%, 0%); /* white mode text color */
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 64%);
-  --body-color: hsl(0, 0%, 87%);
-  --container-color: hsl(0, 0%, 83%);
+  --body-color: hsl(0, 0%, 87%); /* white mode main background color */
+  --container-color: hsl(
+    0,
+    0%,
+    83%
+  ); /* white mode alternate background color */
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
