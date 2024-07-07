@@ -24,7 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.css"],
-            "scripts": ["src/assets/js/scrollreveal.min.js"]
+            "scripts": [
+              "src/assets/js/scrollreveal.min.js",
+              "node_modules/particles.js/particles.js"
+            ]
           },
           "configurations": {
             "production": {
