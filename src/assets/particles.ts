@@ -1,7 +1,7 @@
 export const particlesSettings = {
   particles: {
     number: {
-      value: 200,
+      value: 50,
       density: {
         enable: true,
         value_area: 1000,
@@ -50,7 +50,7 @@ export const particlesSettings = {
     move: {
       enable: true,
       speed: 1,
-      direction: 'top-right',
+      direction: 'bottom-right',
       random: true,
       straight: false,
       out_mode: 'out',

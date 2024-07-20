@@ -113,10 +113,10 @@ export class BodyComponent implements OnInit {
       origin: 'right',
     });
     sr.reveal(
-      `.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data`,
+      `.home__name, .home__intro, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data`,
       { origin: 'left' }
     );
-    sr.reveal(`.services__card, .projects__card`, { interval: 100 });
+    sr.reveal(`.services__card, .projects__container`, { interval: 100 });
 
     //* * * * * * * * * * * * * * * * DARK / LIGHT THEME CHANGE * * * * * * *
     const darkTheme = 'dark-theme';
@@ -161,12 +161,9 @@ export class BodyComponent implements OnInit {
     }
     if (theme === 'light') {
       this.particleSettings.particles.shape.type = 'circle';
-      this.particleSettings.particles.line_linked.color = '#000000';
       particlesJS('particles-js', this.particleSettings);
     } else {
       this.particleSettings.particles.shape.type = 'star';
-      this.particleSettings.particles.line_linked.color = '#ffffff';
-
       particlesJS('particles-js', this.particleSettings);
     }
   }

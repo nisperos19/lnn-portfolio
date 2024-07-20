@@ -115,28 +115,11 @@ export class HeaderComponent implements OnInit {
           this.header.style.top = '0';
         }
       }
-      // if (this.header) {
-      //   const currentBackgroundColor = window.getComputedStyle(
-      //     this.header
-      //   ).backgroundColor;
-      //   if (window.scrollY === 0) {
-      //     this.header.style.backgroundColor = this.convertRgbToRgba(
-      //       currentBackgroundColor,
-      //       0
-      //     );
-      //   } else {
-      //     this.header.style.backgroundColor = this.convertRgbToRgba(
-      //       currentBackgroundColor,
-      //       1
-      //     );
-      //   }
-      // }
       lastScrollY = window.scrollY;
     });
   }
-
-  // convertRgbToRgba(rgb: any, opacity: any) {
-  //   const rgbValues = rgb.match(/\d+/g);
-  //   return `rgba(${rgbValues[0]}, ${rgbValues[1]}, ${rgbValues[2]}, ${opacity})`;
-  // }
+  openPDF(event: MouseEvent): void {
+    event.preventDefault(); // Prevent Angular from intercepting the link
+    window.open('assets/resume.pdf', '_blank', 'noopener,noreferrer');
+  }
 }

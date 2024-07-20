@@ -4,134 +4,31 @@
     </h2>
 
     <div class="projects__container container grid">
-        <article class="projects__card">
-            <div class="projects__image">
-                <img src="./../../assets/img/project-1.jpg" alt="image" class="projects__img" />
+        <ng-container *ngFor="let p of projects">
+            <article class="projects__card">
+                <div class="projects__image">
+                    <img [src]="p.imgLink" alt="image" class="projects__img" />
 
-                <a href="" class="projects__button button">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-            </div>
+                    <a [href]="p.projectLink" target=”_blank” class="projects__button button">
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </div>
 
-            <div class="projects__content">
-                <h3 class="projects__subtitle">Website</h3>
-                <h2 class="projects__title">Restaurant Website</h2>
+                <div class="projects__content">
+                    <h3 class="projects__subtitle">{{p.subtitle}}</h3>
+                    <h2 class="projects__title">{{p.title}}</h2>
 
-                <p class="projects__description">
-                    Project that you carry out in the design and structure of the
-                    layout, showing the design at the client's request.
-                </p>
-            </div>
+                    <p class="projects__description">
+                        {{p.description}}
+                    </p>
+                </div>
 
-            <div class="projects__buttons">
-                <a href="https://github.com/" class="projects__link">
-                    <i class="ri-github-line"></i> View
-                </a>
-            </div>
-        </article>
-
-        <article class="projects__card">
-            <div class="projects__image">
-                <img src="./../../assets/img/project-2.jpg" alt="image" class="projects__img" />
-
-                <a href="" class="projects__button button">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-            </div>
-
-            <div class="projects__content">
-                <h3 class="projects__subtitle">App</h3>
-                <h2 class="projects__title">Yoga App</h2>
-
-                <p class="projects__description">
-                    Project that you carry out in the design and structure of the
-                    layout, showing the design at the client's request.
-                </p>
-            </div>
-
-            <div class="projects__buttons">
-                <a href="https://github.com/" class="projects__link">
-                    <i class="ri-github-line"></i> View
-                </a>
-            </div>
-        </article>
-
-        <article class="projects__card">
-            <div class="projects__image">
-                <img src="./../../assets/img/project-3.jpg" alt="image" class="projects__img" />
-
-                <a href="" class="projects__button button">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-            </div>
-
-            <div class="projects__content">
-                <h3 class="projects__subtitle">App</h3>
-                <h2 class="projects__title">Fast Food App</h2>
-
-                <p class="projects__description">
-                    Project that you carry out in the design and structure of the
-                    layout, showing the design at the client's request.
-                </p>
-            </div>
-
-            <div class="projects__buttons">
-                <a href="https://github.com/" class="projects__link">
-                    <i class="ri-github-line"></i> View
-                </a>
-            </div>
-        </article>
-
-        <article class="projects__card">
-            <div class="projects__image">
-                <img src="./../../assets/img/project-1.jpg" alt="image" class="projects__img" />
-
-                <a href="" class="projects__button button">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-            </div>
-
-            <div class="projects__content">
-                <h3 class="projects__subtitle">Website</h3>
-                <h2 class="projects__title">Coffee Delivery Website</h2>
-
-                <p class="projects__description">
-                    Project that you carry out in the design and structure of the
-                    layout, showing the design at the client's request.
-                </p>
-            </div>
-
-            <div class="projects__buttons">
-                <a href="https://github.com/" class="projects__link">
-                    <i class="ri-github-line"></i> View
-                </a>
-            </div>
-        </article>
-
-        <article class="projects__card">
-            <div class="projects__image">
-                <img src="./../../assets/img/project-2.jpg" alt="image" class="projects__img" />
-
-                <a href="" class="projects__button button">
-                    <i class="ri-arrow-right-up-line"></i>
-                </a>
-            </div>
-
-            <div class="projects__content">
-                <h3 class="projects__subtitle">Website</h3>
-                <h2 class="projects__title">Barbershop Website</h2>
-
-                <p class="projects__description">
-                    Project that you carry out in the design and structure of the
-                    layout, showing the design at the client's request.
-                </p>
-            </div>
-
-            <div class="projects__buttons">
-                <a href="https://github.com/" class="projects__link">
-                    <i class="ri-github-line"></i> View
-                </a>
-            </div>
-        </article>
+                <!-- <div class="projects__buttons">
+                    <a href="https://github.com/" class="projects__link">
+                        <i class="ri-github-line"></i> View
+                    </a>
+                </div> -->
+            </article>
+        </ng-container>
     </div>
 </section>

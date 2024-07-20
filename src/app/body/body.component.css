@@ -16,3 +16,59 @@
 .main {
   z-index: 1;
 }
+.social {
+  position: fixed;
+  /* left: -3rem; */
+  bottom: 0;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.social-link {
+  background-color: var(--black-color-light);
+  color: var(--white-color);
+  font-size: 1.25rem;
+  padding: 6px;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover {
+  background-color: var(--black-color);
+}
+
+/* For super small devices */
+@media screen and (min-width: 0px) {
+  .main {
+    padding: 0 20px;
+  }
+}
+
+/* For small devices */
+@media screen and (min-width: 340px) {
+  .main {
+    padding: 0 25px;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .main {
+    padding: 0 100px;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1150px) {
+  .main {
+    padding: 0 150px;
+  }
+  .social {
+    left: 1rem;
+  }
+  .social-link {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
