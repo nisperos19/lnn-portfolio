@@ -9,8 +9,6 @@ import { ServicesComponent } from './components/services/services.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ContactBasicComponent } from './components/contact-basic/contact-basic.component';
-
 
 @NgModule({
   declarations: [
@@ -21,11 +19,7 @@ import { ContactBasicComponent } from './components/contact-basic/contact-basic.
     ProjectsComponent,
     ContactComponent,
     HeaderComponent,
-    ContactBasicComponent
   ],
-  imports: [
-    CommonModule,
-    BodyRoutingModule
-  ]
+  imports: [CommonModule, BodyRoutingModule],
 })
-export class BodyModule { }
+export class BodyModule {}

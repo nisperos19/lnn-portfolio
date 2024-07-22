@@ -208,6 +208,7 @@
   }
   .nav__link-button:hover {
     color: var(--white-color);
+    background-color: var(--first-color);
   }
   .nav__link-button::after {
     background-color: transparent;

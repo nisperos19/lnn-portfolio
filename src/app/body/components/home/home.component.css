@@ -39,6 +39,7 @@
 }
 
 .home__description b {
+  color: var(--title-color);
   background: linear-gradient(
     90deg,
     hsla(14, 98%, 50%, 0.3),
@@ -52,9 +53,9 @@
 }
 
 .home__scroll {
-  display: block;
   width: max-content;
   display: flex;
+  align-items: center;
   column-gap: 0.75rem;
 }
 
@@ -97,4 +98,26 @@
     transform: translateY(0.6rem);
     opacity: 0;
   }
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+.underline:after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  transition: 300ms;
+}
+.underline:hover:after {
+  width: 100%;
+}
+.underline:not(:hover):after {
+  right: 0;
+  left: auto;
 }
